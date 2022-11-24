@@ -1,0 +1,129 @@
+.favourite-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.remove-all-button {
+  cursor: pointer;
+}
+.top-dets {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+.eachdiv {
+  width: 100%;
+  margin: 1px;
+  position: relative;
+  padding: 20px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.eachdiv:hover {
+  background-color: #ffffffcf; 
+}
+
+.city-dets,
+.tempdets {
+  width: 30%;
+  height: auto;
+}
+.city-dets,
+.heart {
+  cursor: pointer;
+}
+.tempdets {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 2rem;
+  align-items: center;
+}
+.w-icon {
+  width: 36px;
+}
+.heart-yellow {
+  position: absolute;
+  right: 30px;
+  top: 40%;
+}
+.modal-div {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 50px;
+  align-items: center;
+}
+.modal-div h3 {
+  text-align: center;
+  font-size: 15px;
+  color: black;
+}
+.buttons {
+  display: flex;
+  padding: 2px;
+  justify-content: space-between;
+  gap: 5px;
+}
+.modal-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: black;
+  min-width: 100px;
+  min-height: 35px;
+  font-size: 18px;
+}
+.modal-button:hover {
+  background-color: #f76b1c;
+  border: none;
+  outline: none;
+  color: white;
+  min-width: 100px;
+  min-height: 35px;
+}
+.no-fav {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 300px;
+}
+.temp-det-in-fav {
+  font-size: 32px;
+  margin-right: 5px;
+}
+.eachdiv:hover {
+  background-color: rgba(255, 255, 255, 0.486);
+}
+
+@media only screen and (max-width: 768px) {
+  .favourite-container {
+    width: 95%;
+    padding: 10px;
+  }
+  .eachdiv {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 10px;
+  }
+  .tempdets,
+  .city-dets {
+    width: 70%;
+  }
+  .heart-yellow {
+    top: 40%;
+  }
+}

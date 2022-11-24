@@ -1,0 +1,138 @@
+.home-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+.place-details-div {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 2rem;
+  font-size: 20px;
+  color: white;
+}
+.fav-div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 0.5rem;
+  cursor: pointer;
+}
+.fav-div img {
+  width: 20px;
+}
+.fav-div span {
+  font-size: 13px;
+}
+.display-div {
+  margin-top: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+.temp {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1rem;
+  align-items: baseline;
+}
+.temp span {
+  font-size: 64px;
+}
+.type {
+  display: flex;
+}
+.celcius,
+.farhenite {
+  padding: 0.5rem;
+}
+.more-details-div {
+  width: 100%;
+  display: flex;
+  padding: 2rem 0;
+  justify-content: space-evenly;
+  column-gap: 2.5% !important;
+  align-items: center;
+  margin-top: 10%;
+  border-top: 1px solid rgba(255, 255, 255, 0.554);
+}
+.bottom-det {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  column-gap: 8px;
+  margin-right: 10px;
+}
+.icn-det {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.name {
+  font-size: 15px;
+}
+.value {
+  font-size: 22px;
+}
+.desc h1 {
+  text-transform: capitalize;
+}
+.yellowify {
+  color: #fad05b;
+}
+.temp-display {
+  font-size: 64px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+@media only screen and (max-width: 768px) {
+  .place-details-div {
+    margin: 0;
+    left: 0;
+    display: flex;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    column-gap: 20px !important;
+  }
+  .home-container {
+    width: 100%;
+  }
+  .display-div {
+    margin-top: 100px;
+  }
+  .more-details-div {
+    padding: 2rem;
+    column-gap: 50px;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    margin-top: 160px;
+    background-color: #ffffff35;
+  }
+  .min-max {
+    min-width: 115px;
+  }
+  .desc h1 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+/* iphone se */
+
+@media only screen and (max-height: 670px) {
+  .more-details-div {
+    margin-top: 30px;
+    background-color: #ffffff35;
+  }
+}

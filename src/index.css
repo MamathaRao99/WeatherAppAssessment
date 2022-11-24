@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    #5d60d0,
+    #6b62cd,
+    #7765cb,
+    #8168c8,
+    #8a6bc6,
+    #9269c1,
+    #9868bb,
+    #9e67b6,
+    #a361ac,
+    #a85ca1,
+    #aa5796,
+    #ac528b
+  );
+}

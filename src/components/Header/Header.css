@@ -1,0 +1,155 @@
+.header{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+  align-items: center;
+  padding: 35px 2rem 0px 2rem;
+}
+.headermobile {
+  display: none;
+}
+.searchbar-for-mobile {
+  display: none;
+}
+.weatherlogo {
+  height: 30px;
+}
+.form {
+  height: 3.5rem;
+  width: 40%;
+  min-width: 250px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.searchfield {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #ffffff;
+  outline: none;
+  color: white;
+  font-size: 100%;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.207);
+  padding-left: 1rem;
+  font-size: 16px;
+  outline: none;
+}
+.searchfield::placeholder {
+  color: #ffffff;
+}
+.search-glass-icn {
+  position: absolute;
+  width: 20px;
+  right: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    display: none;
+  }
+  .headermobile {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    min-height: 70px;
+    padding: 10px;
+  }
+  .burgericon,
+  .logo-mobile-icn,
+  .search-icn {
+    position: absolute;
+    top: 16px;
+  }
+  .burgericon {
+    width: 18px;
+    height: 12px;
+    left: 16px;
+  }
+  .logo-mobile-icn {
+    width: 110px;
+    left: 72px;
+    top: 12px;
+  }
+  .search-icn {
+    width: 18px;
+    right: 30px;
+  }
+  .mobile-drawer-main {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+  }
+  .mobile-drawer-content {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-top: 25px;
+    animation: slide 0.2s linear;
+  }
+  .mobile-drawer-content h3 {
+    color: grey;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 30px;
+  }
+  .active h3 {
+    color: black !important;
+  }
+  .mobile-nav {
+    border-bottom: none !important;
+    text-decoration: none !important;
+  }
+  @keyframes slide {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 80%;
+    }
+  }
+  .searchbar-for-mobile {
+    display: flex;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    background-color: white;
+  }
+  .search-bar-div-mobile {
+    width: 100%;
+    height: 55px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.539);
+    position: relative;
+  }
+  .search-input-mobile {
+    height: 80%;
+    width: 100%;
+    background-color: white;
+    border: none;
+    outline: none;
+    padding-top: 10px;
+    padding-left: 60px;
+    font-size: 16px;
+    color: black;
+  }
+  .search-back-icn {
+    position: absolute;
+    left: 10px;
+    top: 20%;
+    width: 24px;
+  }
+}
